@@ -8,8 +8,6 @@ public class Main {
 		int x = sc.nextInt();
 		int[] a = new int[n];
 		
-		 StringBuilder sb = new StringBuilder();
-		
 		for(int i=0; i<n; i++) {
 			a[i] = sc.nextInt();
 		}
