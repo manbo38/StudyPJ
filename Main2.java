@@ -1,21 +1,31 @@
-package p2024_08_01;
+package p2024_08_05;
 
-//준하는 사이트에 회원가입을 하다가 joonas라는 아이디가 이미 존재하는 것을 보고 놀랐다. 준하는 놀람을 ??!로 표현한다.
-//준하가 가입하려고 하는 사이트에 이미 존재하는 아이디가 주어졌을 때, 놀람을 표현하는 프로그램을 작성하시오.
+//문제 시험 점수를 입력받아 90 ~ 100점은 A, 80 ~ 89점은 B, 70 ~ 79점은 C, 60 ~ 69점은 D,
+//나머지 점수는 F를 출력하는 프로그램을 작성하시오.
+
+//입력 첫째 줄에 시험 점수가 주어진다. 시험 점수는 0보다 크거나 같고, 100보다 작거나 같은 정수이다.
+
+//출력 시험 성적을 출력한다.
 
 import java.util.Scanner;
 public class Main2 {
 
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
-		
-        String msg = "joonas??!";
-		
-		String id = sc.nextLine();
-		
-		if(id.length() <= 50) {
-				System.out.println(id+msg);
+		int a = sc.nextInt();
+			
+		switch(a/10) {
+		case 10 :
+		case 9 : System.out.println("A");
+		  			break;
+		case 8 : System.out.println("B");
+					break;
+		case 7 : System.out.println("C");
+		            break;
+		case 6 : System.out.println("D");
+					break;
+		default : System.out.println("F");
 		}
 	}
+
 }
